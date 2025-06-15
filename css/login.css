@@ -14,7 +14,8 @@ body {
   display: flex;
   justify-content: center;  /* Centraliza horizontalmente */
   align-items: center;      /* Centraliza verticalmente */
-  background-color: #f0f2f5; /* Cor de fundo leve */
+  background-color: #000000; /* Cor de fundo leve */
+  background-image: radial-gradient(circle at center, #065f46, #0f172a, #000000);
 }
 
 /* Container geral do login */
@@ -22,7 +23,8 @@ body {
   background-color: #1a1b1f;
   padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 9px 9px 60px rgb(0, 0, 0),
+            -9px -9px 60px rgb(0, 0, 0);
   width: 100%;
   max-width: 400px; /* Limita o tamanho máximo */   
   position: relative; /* Torna a posição base para o ::before */
