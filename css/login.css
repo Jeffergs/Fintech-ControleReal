@@ -1,161 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-/* Reset básico pra evitar estilos indesejados dos navegadores */
 *{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  padding: 0;  
+  font-family: Arial, sans-serif;  
 }
 
-/* Centralizar o formulário na tela */
 body {
-  height: 100vh;  /* Faz o body ocupar a altura inteira da tela */
-  display: flex;
-  justify-content: center;  /* Centraliza horizontalmente */
-  align-items: center;      /* Centraliza verticalmente */
-  background-color: #000000; /* Cor de fundo leve */
-  background-image: radial-gradient(circle at center, #065f46, #0f172a, #000000);
+    background-color: #000000;
+    background-image: radial-gradient(circle at center, #065f46, #0f172a, #000000);
+}
+.login-container {
+    max-width: 400px;           
+    background: #1a1b1f;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 9px 9px 60px rgb(0, 0, 0),
+              -9px -9px 60px rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
 }
 
-/* Container geral do login */
-.login-container {  
-  background-color: #1a1b1f;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 9px 9px 60px rgb(0, 0, 0),
-            -9px -9px 60px rgb(0, 0, 0);
-  width: 100%;
-  max-width: 400px; /* Limita o tamanho máximo */   
-  position: relative; /* Torna a posição base para o ::before */
-  overflow: hidden;   /* Garante que o fundo não vaze para fora */
-}
-
-/* Agora o conteúdo fica acima da imagem */
-.login-container > * {
-  position: relative;
-  z-index: 1;
-}
-
-/* Pseudo-elemento para a imagem de fundo */
 .login-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(../img/background\ 2.png); /* Caminho da sua imagem */
-  background-size: cover;    /* Faz a imagem cobrir o container */
-  background-position: center; /* Centraliza a imagem */
-  opacity: 0.3;              /* Só a imagem fica com opacidade */
-  z-index: 0;                /* Mantém a imagem atrás do conteúdo */
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url(../img/background\ 2.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+.login-container > * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Nome da aplicação */
 .login-container h1 {
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  font-size: 1.8rem;
-  text-align: center;  
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 800; /* Regular */
+    text-align: center;    
 }
 
-/* Formulário com espaçamento entre os campos */
-.login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;  /* Espaçamento entre os campos */
-  text-align: center;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;  
+.logo{
+    margin-bottom: 0.4rem;
 }
 
-/* Cada campo (email, senha) */
-.campo-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Faz o label ficar alinhado à esquerda */
+.form-control {
+    background-color: #26272c;
+    border: 3px solid #3f4148;
+    border-radius: 13px;
+    box-shadow: 0px 5px 30px #000000 ;
+    color: #9ca3af;
+}
+
+.form-control:focus {
+    border-color: #10aa77;
+    outline: none;
+    background-color: #26272c;
+    color: #9ca3af;
+}
+
+input:-webkit-autofill {   
+  color: #9ca3af;
+  -webkit-text-fill-color: #9ca3af !important; /* Corrige a cor do texto dentro do campo */  
+  -webkit-box-shadow: 0px 0px 0px 1000px #26272c inset !important; /* Corrige fundo branco */
 }
 
 /* Label */
-label {  
-  margin: 0 0 0.1rem 0.1rem;
+.form-label{  
+  margin: 0rem 0rem 0rem 4px;
   font-weight: 400; /* Regular */
   color: #ffffff;  
 }
 
-/* Input */
-input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 3px solid #3f4148;
-  border-radius: 13px;
-  transition: border-color 0.3s;
-  background-color: #26272c;
-  box-shadow: 0px 5px 30px #000000 ;
-  color: #9ca3af
+.esqueci{
+    font-weight: 400px; /* Regular */
+    font-size: 14px ;
+    display: block;
+    width: fit-content; /* Faz o link ocupar apenas o tamanho do texto */
+    margin: 0rem 0rem 2rem 6.3rem; 
+    text-decoration: none;       
 }
 
-input:focus {
-  border-color: #10aa77;   /* Cor azul ao focar */
-  outline: none;
+.esqueci:hover{
+    text-decoration: underline;
 }
 
-/* Link "Esqueci minha senha" */
-.link-senha {
-  font-size: 0.9rem;
-  color: #007bff;
-  text-align: right;
-  display: block; 
-  margin: -0.5rem 0.2rem 1rem 0rem;
-  text-decoration: none;
+.criar{       
+    text-decoration: none;      
 }
 
-.link-senha:hover {
-  text-decoration: underline;
+p{
+    font-weight: 400px; /* Regular */
+    font-size: 14px ;
+    margin: 0rem 0rem 0rem 1.3rem; 
 }
 
-/* Botão de Entrar */
-button {
-  background-color: #0a7c56;
-  border: 3px solid #3f4148;
-  border-radius: 13px;
-  color: white;
-  padding: 0.75rem;  
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600; /* Semibold */
-  transition: background-color 0.3s;
-  box-shadow: 0px 5px 30px #000000 ;
+.criar:hover{
+    text-decoration: underline;
+}
+    
+.btn-custom {
+    background-color: #0a7c56;
+    border: 3px solid #3f4148;
+    border-radius: 13px;
+    color: #ffffff;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    box-shadow: 0px 5px 30px #000000;
 }
 
-button:hover {
-  background-color: #10aa77;  
-}
-
-/* Mensagem de cadastro */
-.mensagem-cadastro {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #ffffff;
-  text-align: center;
-}
-
-.mensagem-cadastro a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.mensagem-cadastro a:hover {
-  text-decoration: underline;
-}
-
-/* Responsividade (Mobile First) */
-@media (max-width: 500px) {
-  .login-container {
-    padding: 1rem;
-    margin: 1rem;
-  }
+.btn-custom:hover {
+    background-color: #10aa77;
+    color: #ffffff;
 }
