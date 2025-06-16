@@ -1,25 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.toggle-password').addEventListener('click', togglePassword);
-});
+document.addEventListener('DOMContentLoaded', function () {
+      const toggleBtn = document.querySelector('.toggle-password');
+      const senhaInput = document.getElementById('senha');
+      const olhoIcone = toggleBtn.querySelector('i');
 
-function togglePassword() {
-  const senhaInput = document.getElementById('senha');
-  const toggleBtn = document.querySelector('.toggle-password');
-  const olhoIcone = toggleBtn.querySelector('i');
+      toggleBtn.addEventListener('click', function () {
+        const isVisible = senhaInput.type === 'text';
 
-  const senhaVisivel = senhaInput.type === 'text';
+        senhaInput.type = isVisible ? 'password' : 'text';
+        olhoIcone.classList.toggle('bi-eye', !isVisible);
+        olhoIcone.classList.toggle('bi-eye-slash', isVisible);
 
-  if (senhaVisivel) {
-    senhaInput.type = 'password';
-    olhoIcone.classList.remove('bi-eye');
-    olhoIcone.classList.add('bi-eye-slash');
-    toggleBtn.setAttribute('aria-label', 'Mostrar senha');
-    toggleBtn.setAttribute('aria-pressed', 'false');
-  } else {
-    senhaInput.type = 'text';
-    olhoIcone.classList.remove('bi-eye-slash');
-    olhoIcone.classList.add('bi-eye');
-    toggleBtn.setAttribute('aria-label', 'Ocultar senha');
-    toggleBtn.setAttribute('aria-pressed', 'true');
-  }
-}
+        toggleBtn.setAttribute('aria-label', isVisible ? 'Mostrar senha' : 'Ocultar senha');
+        toggleBtn.setAttribute('aria-pressed', String(!isVisible));
+      });
+    });
+
+
