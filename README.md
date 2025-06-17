@@ -27,12 +27,12 @@ Ao contrário de apps como o PocketSmith, este produto elimina a complexidade e 
 </div>
 
 ## 🛠️Ferramentas utilizadas
-<img src="https://github.com/user-attachments/assets/d1681fdd-31da-49a5-8090-0fe40d6b4e03" alt="datamodeler" width="46"> &nbsp;
-<img src="https://skillicons.dev/icons?i=figma" width="35" /> &nbsp;
-<img src="https://skillicons.dev/icons?i=html" width="35" /> &nbsp;
-<img src="https://skillicons.dev/icons?i=css" width="35" /> &nbsp;
-<img src="https://skillicons.dev/icons?i=bootstrap" width="35" /> &nbsp;
-<img src="https://skillicons.dev/icons?i=javascript" width="35" /> &nbsp;
+<img src="https://github.com/user-attachments/assets/d1681fdd-31da-49a5-8090-0fe40d6b4e03" alt="datamodeler" width="84"> &nbsp;
+<img src="https://skillicons.dev/icons?i=figma" width="70" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=html" width="70" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=css" width="70" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=bootstrap" width="70" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=javascript" width="70" /> &nbsp;
 
 
 
