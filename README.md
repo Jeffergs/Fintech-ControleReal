@@ -8,3 +8,17 @@
 Para pessoas que desejam controlar suas finanças pessoais e estão insatisfeitas com soluções complicadas e sem foco, o ControleReal é uma ferramenta simples e intuitiva de gerenciamento financeiro.
 Ele oferece a capacidade de registrar fontes de receita, despesas, dívidas e investimentos, além de criar metas personalizadas com um caminho claro para alcançá-las.
 Ao contrário de apps como o PocketSmith, este produto elimina a complexidade e adota uma linguagem acessível, com recomendações automáticas e um planejamento financeiro simplificado, ajudando você a atingir suas metas sem sobrecarregar sua rotina.
+
+## Ferramentas utilizadas
+<img src="https://github.com/user-attachments/assets/d1681fdd-31da-49a5-8090-0fe40d6b4e03" alt="datamodeler" width="50"> &nbsp;
+<img src="https://skillicons.dev/icons?i=figma" width="35" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=html" width="35" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=css" width="35" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=bootstrap" width="35" /> &nbsp;
+<img src="https://skillicons.dev/icons?i=javascript" width="35" /> &nbsp;
+
+
+
+
+
+
